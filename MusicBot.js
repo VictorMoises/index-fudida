@@ -4,7 +4,7 @@ const ytdl = require('ytdl-core');
 const PREFIX = "r!";
 
 var client = new Discord.Client();
-const youtube = new YouTube('AIzaSyAWZgZSQrWLTci5QPJWXNq6RlAAKjO8W5k');
+const youtube = new YouTube('api');
 
 const queue = new Map();
 
@@ -186,4 +186,4 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`🎶 Tocando: **${song.title}**`);
 }
 
-client.login('NDM3Njk3MDE2OTY1ODkwMDYw.Db-aGw.CEj7klXaAbuh7Sci4pM21C5xxQs');
+client.login('token');
